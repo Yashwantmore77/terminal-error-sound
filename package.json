@@ -3,7 +3,7 @@
   "displayName": "FAAA",
   "icon": "images/icon.png",
   "description": "Plays a sound when a terminal command fails.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "YashwantMore",
   "repository": {
     "type": "git",
