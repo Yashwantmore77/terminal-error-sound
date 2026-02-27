@@ -1,0 +1,79 @@
+{
+  "name": "faaa",
+  "displayName": "FAAA",
+  "description": "Plays a sound when a terminal command fails.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/you/terminal-error-sound"
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "terminal",
+    "error",
+    "sound",
+    "audio",
+    "notification"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:terminalErrorSound.testSound",
+    "onCommand:terminalErrorSound.toggle"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "FAAA",
+      "properties": {
+        "terminalErrorSound.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable FAAA."
+        },
+        "terminalErrorSound.volume": {
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Sound volume (0.0 = silent, 1.0 = full)."
+        },
+        "terminalErrorSound.customSoundPath": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to a custom sound file (.mp3, .wav, .ogg). Leave empty to use the default sound."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "terminalErrorSound.testSound",
+        "title": "FAAA: Test Sound"
+      },
+      {
+        "command": "terminalErrorSound.toggle",
+        "title": "FAAA: Toggle On/Off"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.93.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
