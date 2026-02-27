@@ -67,7 +67,7 @@ Search for **"FAAA"** in the VSCode Extensions panel.
 
 ### From source
 ```bash
-git clone https://github.com/you/terminal-error-sound
+git clone https://github.com/Yashwantmore77/terminal-error-sound
 cd terminal-error-sound
 npm install
 npm run compile

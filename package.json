@@ -1,12 +1,13 @@
 {
-  "name": "faaa",
+  "name": "faaa-terminal-error-sound",
   "displayName": "FAAA",
+  "icon": "images/icon.png",
   "description": "Plays a sound when a terminal command fails.",
   "version": "0.0.1",
-  "publisher": "your-publisher-id",
+  "publisher": "YashwantMore",
   "repository": {
     "type": "git",
-    "url": "https://github.com/you/terminal-error-sound"
+    "url": "https://github.com/Yashwantmore77/terminal-error-sound"
   },
   "engines": {
     "vscode": "^1.93.0"
